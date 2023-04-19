@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(247, 247, 247);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: jetbrains;
+  src: url(../fonts/static/JetBrainsMono-Regular.ttf);
+}
+
+.container h1 {
+  font-family: "jetbrains";
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: #d53369;
+  border-radius: 4px;
+  box-shadow: 10px 10px 10px #969696;
+  color: white;
+  padding: 1rem;
+  text-shadow: 4px 3px 7px #d53369;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.list {
+  background-color: #d53369;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 10px 10px 10px #616161;
+}
+
+.list li {
+  list-style: none;
+  color: white;
+  font-weight: bold;
+  padding: 12px 32px;
+  margin-bottom: 4px;
+  transition: background 1s;
+}
+
+.list li:hover {
+  background-color: #b02151;
+}
+
+.list input {
+  accent-color: #fa1a65;
+}
+
+.list input:checked + span {
+  text-decoration: line-through;
+}
+
+.list li:has(input:checked) {
+  background: #ff7ea9;
+  color: #940333;
+  border-radius: 4px;
+}
